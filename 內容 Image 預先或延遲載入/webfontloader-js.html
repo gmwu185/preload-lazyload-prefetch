@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webfontloader.js 引入 google webFont</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Noto Sans TC', '新細明體';
+        /*如果HTML元素有未套用到字體的話 ↓*/
+        /*font-weight: 400;*/ /*不指定font-weight，預設font-weight:400，所以下載並使用 NotoSansTC-Regular.woff2 */
+      }
+
+      .div1 {
+        font-family: 'Noto Sans TC', '新細明體';
+        font-weight: 100; /*下載並使用 NotoSansTC-Thin.woff2*/
+      }
+      .div2 {
+        font-family: 'Noto Sans TC', '新細明體';
+        font-weight: 700; /*下載並使用 NotoSansTC-Bold.woff2 */
+      }
+      .div3 {
+        font-family: 'Noto Sans TC', '新細明體';
+        font-weight: 900; /*下載並使用 NotoSansTC-Black.woff2*/
+      }
+    </style>
+  </head>
+  <body>
+    <header>我是header</header>
+    <hr />
+    <div class="div1">
+      <p>旺報【記者李文輝╱綜合報導】</p>
+      <p>
+        受到反送中衝擊，香港餐廳生意比2003年嚴重急性呼吸道症候群（SARS）爆發時更差，代表餐飲界的香港立法會議員張宇人指出，已有超過200家餐廳食堂受影響而結束營業，預料倒閉潮還會持續。此外，訪港客量急跌一半，香港旅遊促進會總幹事崔定邦促請港府當局，提供資金協助交租，並減免機場稅以增加港人出境意願。
+      </p>
+      ...(略
+    </div>
+    <div class="div2">
+      <p>旺報【記者李文輝╱綜合報導】</p>
+      <p>
+        受到反送中衝擊，香港餐廳生意比2003年嚴重急性呼吸道症候群（SARS）爆發時更差，代表餐飲界的香港立法會議員張宇人指出，已有超過200家餐廳食堂受影響而結束營業，預料倒閉潮還會持續。此外，訪港客量急跌一半，香港旅遊促進會總幹事崔定邦促請港府當局，提供資金協助交租，並減免機場稅以增加港人出境意願。
+      </p>
+      ...(略
+    </div>
+    <div class="div3">
+      <p>旺報【記者李文輝╱綜合報導】</p>
+      <p>
+        受到反送中衝擊，香港餐廳生意比2003年嚴重急性呼吸道症候群（SARS）爆發時更差，代表餐飲界的香港立法會議員張宇人指出，已有超過200家餐廳食堂受影響而結束營業，預料倒閉潮還會持續。此外，訪港客量急跌一半，香港旅遊促進會總幹事崔定邦促請港府當局，提供資金協助交租，並減免機場稅以增加港人出境意願。
+      </p>
+      ...(略
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      // WebFont.load({
+      //   google: {
+      //     families: ['Noto Sans TC:100,400,700,900&display=swap'], // 加上 display=swap 避免網頁一開始文字消失了~
+      //   },
+      // });
+      // console.log('WebFont load', WebFont);
+
+      (function (d) {
+        var wf = d.createElement('script');
+        var s = d.scripts[0];
+        wf.async = true; //非同步方式載入.js
+        wf.src = 'assets/js/webfont.js';
+
+        s.parentNode.insertBefore(wf, s);
+        console.log('WebFont load', WebFont);
+
+      })(document);
+    </script>
+  </body>
+</html>

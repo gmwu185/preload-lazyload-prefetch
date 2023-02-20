@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- 沒使用 rel="preload" -> 字體會取於 http status 404 & 101 之後 -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap"
+    /> -->
+
+    <!--
+      ## 使用 rel="preload" 優先取 css2 文字下的路徑
+      ** 取的情形和上面一樣
+    -->
+    <!-- <link
+      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap"
+    /> -->
+
+    <!-- 使用 css2 連結文件中的字型檔，以 preload 預先載入 -->
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/notoseriftc/v17/XLY9IZb5bJNDGYxLBibeHZ0BvvMpbXxGSMoPW2CYaL4xcgZt2hLi5AU2hsKUwIdeS7qKC8bpy_5IYlDy.119.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/notoseriftc/v17/XLY9IZb5bJNDGYxLBibeHZ0BvvMpbXxGSMoPW2CYaL4xcgZt2hLi5AU2hsKUwIdeS7qKC8bpy_5IYlDy.114.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/notoseriftc/v17/XLY9IZb5bJNDGYxLBibeHZ0BvvMpbXxGSMoPW2CYaL4xcgZt2hLi5AU2hsKUwIdeS7qKC8bpy_5IYlDy.118.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/notoseriftc/v17/XLY9IZb5bJNDGYxLBibeHZ0BvvMpbXxGSMoPW2CYaL4xcgZt2hLi5AU2hsKUwIdeS7qKC8bpy_5IYlDy.116.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/notoseriftc/v17/XLY9IZb5bJNDGYxLBibeHZ0BvvMpbXxGSMoPW2CYaL4xcgZt2hLi5AU2hsKUwIdeS7qKC8bpy_5IYlDy.112.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/notoseriftc/v17/XLY9IZb5bJNDGYxLBibeHZ0BvvMpbXxGSMoPW2CYaL4xcgZt2hLi5AU2hsKUwIdeS7qKC8bpy_5IYlDy.115.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/notoseriftc/v17/XLY9IZb5bJNDGYxLBibeHZ0BvvMpbXxGSMoPW2CYaL4xcgZt2hLi5AU2hsKUwIdeS7qKC8bpy_5IYlDy.117.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/notoseriftc/v17/XLY9IZb5bJNDGYxLBibeHZ0BvvMpbXxGSMoPW2CYaL4xcgZt2hLi5AU2hsKUwIdeS7qKC8bpy_5IYlDy.107.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/notoseriftc/v17/XLY9IZb5bJNDGYxLBibeHZ0BvvMpbXxGSMoPW2CYaL4xcgZt2hLi5AU2hsKUwIdeS7qKC8bpy_5IYlDy.113.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/notoseriftc/v17/XLY9IZb5bJNDGYxLBibeHZ0BvvMpbXxGSMoPW2CYaL4xcgZt2hLi5AU2hsKUwIdeS7qKC8bpy_5IYlDy.50.woff2"
+      as="font"
+      crossorigin
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap');
+      .font--NotoSerifTC {
+        font-family: 'Noto Serif TC', serif;
+      }
+      body {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="font--NotoSerifTC">
+      人皆生而自由；在尊嚴及權利上均各平等。人各賦有理性良知，誠應和睦相處，情同手足。
+      人皆生而自由；在尊嚴及權利上均各平等。
+    </p>
+  </body>
+</html>
